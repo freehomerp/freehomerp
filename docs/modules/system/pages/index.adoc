@@ -1,0 +1,3 @@
+= FreeHomeRP System Documentation
+
+In this section we will describe the product specifications and design in order to help to understand its internals.

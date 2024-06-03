@@ -1,3 +1,4 @@
 {
-  "asciidoc.extensions.enableKroki": true
+  "asciidoc.extensions.enableKroki": true,
+  "asciidoc.antora.enableAntoraSupport": true
 }

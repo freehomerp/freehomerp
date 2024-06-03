@@ -1,0 +1,7 @@
+name: freehomerp
+version:
+  main: latest
+  release/v(?<version>+({0..9}).+({0..9}))): $<version>
+nav:
+  - modules/user/nav.adoc
+  - modules/system/nav.adoc

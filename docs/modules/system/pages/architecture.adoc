@@ -1,0 +1,9 @@
+= System architecture specification
+
+include::partial$overview.adoc[]
+
+== System architecture
+
+=== Context architecture
+
+=== Container architecture
