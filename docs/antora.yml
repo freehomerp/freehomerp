@@ -1,0 +1,5 @@
+name: freehomerp
+version: '0.0'
+nav:
+  - modules/user/nav.adoc
+  - modules/system/nav.adoc
