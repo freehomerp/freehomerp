@@ -1,1 +1,6 @@
 = FreeHomeRP System Documentation
+
+In this section we will describe the product specifications and design.
+
+
+ that is being developed and provides instructions on how to perform various tasks with it. In general, product documentation includes requirements, tech specifications, business logic, and manuals. There are two main types of product documentation
