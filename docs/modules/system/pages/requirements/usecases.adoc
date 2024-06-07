@@ -1,0 +1,144 @@
+= System Usecases
+
+== Admin Console Usecases
+
+=== Authentication
+
+[#ADM01/0001]
+==== ADM01/0001: Sign in to the admin dashboard with credentials
+
+[#ADM01/0002]
+==== ADM01/0002: Sign in to the admin dashboard with passkey
+
+[#ADM01/0003]
+==== ADM01/0003: Sign out from the admin dashboard
+
+=== Users and Household management
+
+[#ADM02/0001]
+==== ADM02/0001: Retrieve a list of users
+
+[#ADM02/0002]
+==== ADM02/0002: Create a user
+
+[#ADM02/0003]
+==== ADM02/0003: Modify a user
+
+[#ADM02/0004]
+==== ADM02/0004: Deactivate user
+
+[#ADM02/0005]
+==== ADM02/0005: Reactivate user
+
+[#ADM02/0006]
+==== ADM02/0006: Retrieve a list of households
+
+[#ADM02/0007]
+==== ADM02/0007: Create a household
+
+[#ADM02/0008]
+==== ADM02/0008: Modify a household
+
+[#ADM02/0009]
+==== ADM02/0009: Deactivate household
+
+[#ADM02/0010]
+==== ADM02/0010: Reactivate household
+
+[#ADM02/0011]
+==== ADM02/0011: Assign user to household
+
+== User Console Usecases
+
+=== Authentication
+
+[#USR01/0001]
+==== USR01/0001: Sign in to the user dashboard with credentials
+
+[#USR01/0002]
+==== USR01/0002: Sign in to the user dashboard with passkey
+
+[#USR01/0003]
+==== USR01/0003: Sign out from the user dashboard
+
+// Priority:: Must
+// Actors:: User and System
+// Description:: The user must be able to log in to the system with their username and password.
+// Preconditions::
+//     - The user must have access to a device with an internet connection.
+//     - The user must be registered in the system.
+// Postconditions::
+//     - The user is either logged in to the system or has received an error message.
+// Main Scenario::
+//     . The user accesses the system's login page.
+//     . The user enters their username and password in the corresponding fields.
+//     . The system validates the user's credentials, logs the user in and redirects it to the system's main page.
+//         .. If the credentials are invalid, the system displays an error message to the user and goes back to the first step.
+
+// [#CU/ADM/01/0001]
+// == CU/ADM/01/0001: Admin login with username and password
+
+// Priority:: Must
+// Actors:: User and System
+// Description:: The user must be able to log in to the system with their username and password.
+// Preconditions::
+//     - The user must have access to a device with an internet connection.
+//     - The user must be registered in the system.
+// Postconditions::
+//     - The user is either logged in to the system or has received an error message.
+// Main Scenario::
+//     . The user accesses the system's login page.
+//     . The user enters their username and password in the corresponding fields.
+//     . The system validates the user's credentials, logs the user in and redirects it to the system's main page.
+//         .. If the credentials are invalid, the system displays an error message to the user and goes back to the first step.
+
+// [#CU01/0002]
+// == CU01/0002: User login with passkey
+
+// Priority:: Could
+// Actors:: User and System
+// Description:: The user must be able to log in to the system with their username and password.
+// Preconditions::
+//     - The user must have access to a device with an internet connection.
+//     - The user must be registered in the system.
+//     - The user must have a passkey compatible device.
+//     - The user must have a passkey registered.
+// Postconditions::
+//     - The user is either logged in to the system or has received an error message.
+// Main Scenario::
+//     . The user accesses the system's login page.
+//     . The user select passkey credential.
+//     . The system requests passkey validation.
+//     . The user selects passkey device and authorize the login.
+//         .. If the selection gives an error or a timeout the system displays an error message to the user and goes back to the first step.
+//     . The system validates the user's credentials, logs the user in and redirects it to the system's main page.
+//         .. If the credentials are invalid, the system displays an error message to the user and goes back to the first step.
+
+// [#CU01/0003]
+// == CU01/0003: User logout
+
+// Priority:: Must
+// Actors:: User and System
+// Description:: The user must be able to logout of the system.
+// Preconditions::
+//     - The user must be logged in the system.
+// Postconditions::
+//     - The user must be logged out of the system.
+// Main Scenario::
+//     . The user select the logout button.
+//     . The system logs out the user in and redirects it to the system's login page.
+
+// [#CU02/0001]
+// == CU02/0001: Create household
+
+// Priority:: High
+// Actors:: System administrator (admin) and System
+// Description:: The admin must be able create a new household
+// Preconditions::
+//     - The admin must have access to a device with an internet connection.
+//     - The admin must be registered in the system with appropiate permissions.
+// Postconditions::
+//     - The household is created in the sytem or the admin has received an error message.
+// Main Scenario::
+// // . The user select the logout button.
+// // . The system logs out the user in and redirects it to the system's login page.

@@ -1,0 +1,193 @@
+= System requirements specification
+
+include::partial$overview.adoc[]
+
+== System features
+
+=== Admin console
+
+==== Authentication
+
+The system will provide a mechanism to authenticate the administrators that try to use the admin console. Also the authenticated user should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow a admin to sign in to admin console using their credentials
+| Must
+| xref:requirements/usecases.adoc#ADM01/0001[ADM01/0001] +
+  xref:requirements/usecases.adoc#ADM01/0002[ADM01/0002]
+
+| Sign out
+| The system should allow a user to sign out from admin console
+| Must
+| xref:requirements/usecases.adoc#ADM01/0003[ADM01/0003]
+
+|===
+
+==== Users and Household management
+
+The system will provide a mechanism to manage users and households in the admin console.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| User management
+| The system should allow admin to list, create, modify, activate and deactivate users
+| Must
+| xref:requirements/usecases.adoc#ADM02/0001[ADM02/0001] +
+  xref:requirements/usecases.adoc#ADM02/0002[ADM02/0002] +
+  xref:requirements/usecases.adoc#ADM02/0003[ADM02/0003] +
+  xref:requirements/usecases.adoc#ADM02/0004[ADM02/0005] +
+  xref:requirements/usecases.adoc#ADM02/0004[ADM02/0004]
+
+| Household management
+| The system should allow admin to list, create, modify, activate and deactivate households
+| Must
+| xref:requirements/usecases.adoc#ADM02/0005[ADM02/0006] +
+  xref:requirements/usecases.adoc#ADM02/0006[ADM02/0007] +
+  xref:requirements/usecases.adoc#ADM02/0007[ADM02/0008] +
+  xref:requirements/usecases.adoc#ADM02/0008[ADM02/0009] +
+  xref:requirements/usecases.adoc#ADM02/0008[ADM02/0010]
+
+| Assign user
+| The system should allow admin to assign a user to a household
+| Must
+| xref:requirements/usecases.adoc#ADM02/0009[ADM02/0011]
+
+|===
+
+=== User console
+
+==== Authentication
+
+The system will provide a mechanism to authenticate the users that try to use the system. Also the authenticated user should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow a user to sign in to user console using their credentials
+| Must
+| xref:requirements/usecases.adoc#USR01/0001[USR01/0001] +
+  xref:requirements/usecases.adoc#USR01/0002[USR01/0002]
+
+| Sign out
+| The system should allow a user to sign out from user console
+| Must
+| xref:requirements/usecases.adoc#USR01/0003[USR01/0003]
+
+|===
+
+// // === User and households management
+
+// // The system will provide a central management console for system administrators. This console will allow them to:
+
+// // * Create, edit, and deactivate households and users.
+// // * Assign users to households with appropriate role-based access control (RBAC) permissions.
+
+// // Also, the users should be able to manage their own information including:
+
+// // * Personal data
+// // * Security settings
+
+// // ==== Household management
+
+// // [cols="1,2,1,1"]
+// // |===
+// // | Name | Description | Priority | Use Cases
+
+// // | Household management
+// // | The system should allow system administrators to list, create and modify households
+// // | Must
+// // | xref:requirements/usecases.adoc#CU02/0001[CU02/0001]
+
+// // | Assign user
+// // | The system should allow system administrators to assign a user to a household
+// // | Must
+// // |
+
+// // | Deactivate and reactivate household
+// // | The system should allow system administrators to deactivate and reactivate a household
+// // | Could
+// // |
+
+// // |===
+
+// // ==== User management
+
+// // [cols="1,2,1,1"]
+// // |===
+// // | Name | Description | Priority | Use Cases
+
+// // | User management
+// // | The system should allow system administrators to list, create, modify, deactivate and reactivate users
+// // | Must
+// // |
+
+// // | User data and settings management
+// // | The system should allow users to modify their own data and settings
+// // | Should
+// // |
+
+// // |===
+
+// ==== Inventory management
+
+// [cols="1,2,1,1"]
+// |===
+// | Name | Description | Priority | Use Cases
+
+// | Product catalog management
+// | The system should allow users to list, create, modify, deactivate and reactivate products in the product catalog
+// | Must
+// |
+
+// | Storage location management
+// | The system should allow users to list, create, modify and deactivate storage locations
+// | Must
+// |
+
+// | Product flow management
+// | The system should allow users to register item inputs, outputs, transfers and stock adjustments on different locations.
+// | Must
+// |
+
+// | Shopping list generation
+// | The system should allow users to generate shopping list based on different parameters like provider, item availability, etc.
+// | Should
+// |
+
+// | Inventory real-time reports
+// | The system should allow users to check real-time reports about product usage, inventory levels and inventory movements history.
+// | Could
+// |
+
+// |===
+
+// ==== Finances management
+
+// [cols="1,2,1,1"]
+// |===
+// | Name | Description | Priority | Use Cases
+
+// | Accounting subaccounts management
+// | The system should allow users to create, modify, deactivate and reactivate subaccounts inside the build-in accounts.
+// | Must
+// |
+
+// | Transactions between accounts
+// | The system should allow users to create, modify and delete transactions between accounts
+// | Must
+// |
+
+// | Financial reports
+// | The system should allow users to check financial reports.
+// | Should
+// |
+
+// |===

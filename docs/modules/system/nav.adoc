@@ -1,1 +1,3 @@
-* xref:system:index.adoc[System documentation]
+* xref:index.adoc[System documentation]
+** xref:requirements.adoc[Requirements]
+*** xref:requirements/usecases.adoc[Usecases]
