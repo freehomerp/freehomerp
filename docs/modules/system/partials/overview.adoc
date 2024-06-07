@@ -1,0 +1,12 @@
+== System overview
+
+This project aims to develop a user-friendly tool for managing daily tasks within a household (or multiple households).
+
+=== Main goals
+
+* *Multi-tenancy*: Users can manage multiple households (tenants) within a single system. This could be ideal for property managers, families with multiple residences, or roommates with shared expenses.
+
+* *Inventory Management*: Users can track household items, monitor stock levels, and create shopping lists. This could help with managing groceries, cleaning supplies, or other household essentials.
+
+* *Financial Management*: Users can track household expenses, categorize spending, and generate reports for budgeting and financial analysis. This could help with managing bills, subscriptions, or overall financial health of the household.
+
