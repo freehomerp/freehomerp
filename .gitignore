@@ -1,6 +1,10 @@
+.next/
 .tmp/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+node_modules/
+.env.local
+next-env.d.ts

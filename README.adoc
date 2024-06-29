@@ -4,6 +4,21 @@ Welcome to the FreeHomeRP project! This project is a tool designed to assist you
 
 In this repository you can find the project source code.
 
+== Getting started
+
+In order to run the development server you will need:
+
+- node >= 20
+- pnpm >= 9.4.0
+
+Then execute the following commands:
+
+[source,bash]
+----
+pnpm install
+pnpm run dev
+----
+
 == Versioning
 
 We use http://semver.org/[SemVer] for versioning.  For the versions available, see the https://github.com/freehomerp/freehomerp/releases[releases on this repository] and the https://github.com/freehomerp/freehomerp/blob/main/CHANGELOG.adoc[changelog].
