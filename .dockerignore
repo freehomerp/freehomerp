@@ -1,0 +1,6 @@
+.turbo/
+node_modules/
+**/.next
+**/.turbo
+**/node_modules
+**/Dockerfile
