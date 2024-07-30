@@ -1,4 +1,7 @@
 {
   "asciidoc.extensions.enableKroki": true,
-  "asciidoc.antora.enableAntoraSupport": true
+  "asciidoc.antora.enableAntoraSupport": true,
+  "conventionalCommits.scopes": [
+    "admin"
+  ]
 }
