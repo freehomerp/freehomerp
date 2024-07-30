@@ -1,0 +1,22 @@
+= System requirements specification
+
+include::partial$overview.adoc[]
+
+== System features
+
+=== Admin console
+
+==== Authentication
+
+The system will provide a mechanism to authenticate the administrators that try to use the admin console. Also the authenticated user should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow a admin to sign in to admin console using their credentials
+| Must
+| xref:requirements/usecases.adoc#ADM01/0001[ADM01/0001]
+
+|===

@@ -1,0 +1,37 @@
+= System architecture specification
+
+include::partial$overview.adoc[]
+
+== System architecture
+
+=== Context architecture
+
+[plantuml]
+....
+!include <C4/C4_Context>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System(freehomerp, "FreeHomeRP", "Allow users to manage their home tasks")
+
+Rel(admin, freehomerp, "Manages households and users")
+
+....
+
+=== Container architecture
+
+[plantuml]
+....
+!include <C4/C4_Container>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System_Boundary(freehomerp, "FreeHomeRP") {
+    Container(webapp, "Web Application")
+    ContainerDb(db, "Database")
+}
+
+Rel(admin, webapp, "Manages households and users", "HTTPS")
+Rel(webapp, db, "Reads from/Writes to", "TCP/SQL")
+
+....
