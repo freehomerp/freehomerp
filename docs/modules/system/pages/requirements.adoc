@@ -1,5 +1,0 @@
-= System requirements specification
-
-include::partial$overview.adoc[]
-
-== System features

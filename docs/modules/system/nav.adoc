@@ -1,4 +1,4 @@
 * xref:index.adoc[System documentation]
-** xref:requirements.adoc[Requirements]
-*** xref:requirements/usecases.adoc[Usecases]
+** xref:requirements/index.adoc[Requirements]
+*** xref:requirements/admin/usecases.adoc[Admin Console Usecases]
 ** xref:architecture.adoc[Architecture]

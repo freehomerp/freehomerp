@@ -1,0 +1,102 @@
+= System Usecases
+
+== Admin Console Usecases
+
+=== Authentication
+
+[#ADM01/0001]
+==== ADM01/0001: Sign in to the admin dashboard with credentials
+
+Priority:: Must
+Actors:: Admin user and System
+Description:: The admin must be able to log in to the system with their username and password.
+Preconditions::
+    - The admin must have access to a device with an internet connection.
+    - The admin must be registered in the system.
+Postconditions::
+    - The admin is either logged in to the system or has received an error message.
+Main Scenario::
+    . The admin accesses the system's login page.
+    . The admin enters their username and password in the corresponding fields.
+    . The system validates the credentials, sign the admin in and redirects it to the admin console main page.
+        .. If the credentials are invalid, the system displays an error message to the user and goes back to the first step.
+
+[#ADM01/0002]
+==== ADM01/0002: Sign in to the admin dashboard with passkey
+
+Priority:: Could
+Actors:: Admin user and System
+Description:: The admin must be able to log in to the system with their passkey.
+Preconditions::
+    - The admin must have access to a device with an internet connection.
+    - The admin must be registered in the system.
+    - The admin must have a passkey compatible device.
+    - The admin must have a passkey registered.
+Postconditions::
+    - The admin is either logged in to the system or has received an error message.
+Main Scenario::
+    . The admin accesses the system's login page.
+    . The admin select passkey credential.
+    . The system requests passkey validation.
+    . The admin selects passkey device and authorize the login.
+        .. If the selection gives an error or a timeout the system displays an error message to the admin and goes back to the first step.
+    . The system validates the admin's credentials, logs the admin in and redirects it to the admin console main page.
+        .. If the credentials are invalid, the system displays an error message to the admin and goes back to the first step.
+
+[#ADM01/0003]
+==== ADM01/0003: Sign out from the admin dashboard
+
+Priority:: Must
+Actors:: Admin user and System
+Description:: The admin must be able to logout of the system.
+Preconditions::
+    - The admin must have access to a device with an internet connection.
+    - The admin must be logged in the system.
+Postconditions::
+    - The admin must be logged out of the system.
+Main Scenario::
+    . The admin select the logout button.
+    . The system logs out the admin in and redirects it to the admin dashboard login page.
+
+=== User management
+
+[#ADM02/0001]
+==== ADM02/0001: Retrieve a list of users
+
+[#ADM02/0002]
+==== ADM02/0002: Retrieve a user details
+
+[#ADM02/0003]
+==== ADM02/0003: Create a new user
+
+[#ADM02/0004]
+==== ADM02/0004: Reactivate an existing user
+
+[#ADM02/0005]
+==== ADM02/0005: Modify a user
+
+[#ADM02/0006]
+==== ADM02/0005: Deactivate a user
+
+=== Household management
+
+[#ADM03/0001]
+==== ADM03/0001: Retrieve a list of households
+
+[#ADM03/0002]
+==== ADM03/0002: Retrieve a household details
+
+[#ADM03/0003]
+==== ADM03/0003: Retrieve a household user list
+
+[#ADM03/0004]
+==== ADM03/0004: Create a new household
+
+// [#ADM03/0005]
+// ==== ADM03/0005: Reactivate an existing user
+
+// [#ADM03/0006]
+// ==== ADM03/0006: Modify a user
+
+// [#ADM03/0007]
+// ==== ADM03/0007: Deactivate a user

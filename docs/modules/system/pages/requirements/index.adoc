@@ -1,0 +1,97 @@
+= System requirements specification
+
+include::partial$overview.adoc[]
+
+== System features
+
+=== Admin console
+
+==== Authentication
+
+The system will provide a mechanism to authenticate the administrators that try to use the admin console. Also the authenticated user should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow an admin to sign in to admin console using their credentials
+| Must
+| xref:requirements/admin/usecases.adoc#ADM01/0001[ADM01/0001] +
+  xref:requirements/admin/usecases.adoc#ADM01/0002[ADM01/0002]
+
+| Sign out
+| The system should allow an admin to sign out from admin console
+| Must
+| xref:requirements/admin/usecases.adoc#ADM01/0003[ADM01/0003]
+
+|===
+
+==== User management
+
+The system will provide a mechanism to manage users.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Show user list and details
+| The system should allow an admin to show a user list and user details
+| Must
+| xref:requirements/admin/usecases.adoc#ADM02/0001[ADM02/0001] +
+  xref:requirements/admin/usecases.adoc#ADM02/0002[ADM02/0002]
+
+| Activate users
+| The system should allow an admin to activate a user
+| Must
+| xref:requirements/admin/usecases.adoc#ADM02/0003[ADM02/0003] +
+  xref:requirements/admin/usecases.adoc#ADM02/0004[ADM02/0004]
+
+| Modify users
+| The system should allow an admin to modify a user
+| Must
+| xref:requirements/admin/usecases.adoc#ADM02/0005[ADM02/0005]
+
+| Deactivate users
+| The system should allow an admin to deactivate a user
+| Should
+| xref:requirements/admin/usecases.adoc#ADM02/0006[ADM02/0006]
+
+|===
+
+==== Household management
+
+The system will provide a mechanism to manage households.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Show household list and details
+| The system should allow an admin to show a household list and household details
+| Must
+| xref:requirements/admin/usecases.adoc#ADM03/0001[ADM03/0001] +
+  xref:requirements/admin/usecases.adoc#ADM03/0002[ADM03/0002] +
+  xref:requirements/admin/usecases.adoc#ADM03/0003[ADM03/0003]
+
+| Activate households
+| The system should allow an admin to activate a household
+| Must
+|
+
+| Modify households
+| The system should allow an admin to modify a household
+| Should
+|
+
+| Deactivate households
+| The system should allow an admin to deactivate a household
+| Should
+|
+
+| Manage household assigned users
+| The system should allow an admin to assign users to a household
+| Must
+|
+
+|===

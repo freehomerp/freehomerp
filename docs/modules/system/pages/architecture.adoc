@@ -6,4 +6,57 @@ include::partial$overview.adoc[]
 
 === Context architecture
 
+[plantuml]
+....
+!include <C4/C4_Context>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System(freehomerp, "FreeHomeRP", "Allow users to manage their home tasks")
+
+Rel(admin, freehomerp, "Manages households and users")
+
+....
+
 === Container architecture
+
+[plantuml]
+....
+!include <C4/C4_Container>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System_Boundary(freehomerp, "FreeHomeRP") {
+    Container(webapp, "Web Application")
+    ContainerDb(db, "Database")
+}
+
+Rel(admin, webapp, "Manages households and users", "HTTPS")
+Rel(webapp, db, "Reads from/Writes to", "TCP/SQL")
+
+....
+
+=== Component architecture
+
+==== Web application
+
+[plantuml]
+....
+!include <C4/C4_Component>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+Container_Boundary(webapp, "Web Application") {
+    Component(admin_auth_page, "AdminAuthPage")
+    Component(admin_auth_usecase, "AdminAuthUsecase")
+    Component(user_repo, "UserRepository")
+}
+
+ContainerDb(db, "Database")
+
+Rel(admin, admin_auth_page, "Login and logout from the system", "HTTPS")
+Rel(admin_auth_page, admin_auth_usecase, "Uses")
+Rel(admin_auth_usecase, user_repo, "Uses")
+Rel(user_repo, db, "Reads from/Writes to", "TCP/SQL")
+
+....
