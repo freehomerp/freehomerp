@@ -1,3 +1,7 @@
 = FreeHomeRP System Documentation
 
 In this section we will describe the product specifications and design in order to help to understand its internals.
+
+This document is divided in the following sections:
+
+* xref:requirements/index.adoc[Product Requirements]
