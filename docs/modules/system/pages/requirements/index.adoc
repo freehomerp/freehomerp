@@ -95,3 +95,26 @@ The system will provide a mechanism to manage households.
 |
 
 |===
+
+== Data requiremens
+
+[plantuml]
+....
+
+package Households <<Aggregate>> {
+    class Household <<Root>> {
+        name: string
+    }
+}
+
+package Users <<Aggregate>> {
+    class User <<Root>> {
+        username: string
+        password: string
+        isAdmin: boolean
+    }
+}
+
+Users.User }|-|{ Households.Household
+
+....
