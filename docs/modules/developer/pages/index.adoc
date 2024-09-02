@@ -1,0 +1,5 @@
+= Developer Documentation
+
+include::ROOT:partial$introduction.adoc[]
+
+This documentation provides a comprehensive overview of the project specifications and design, organized as follows:

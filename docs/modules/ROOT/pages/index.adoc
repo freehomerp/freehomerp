@@ -1,0 +1,14 @@
+= Product Documentation
+
+include::partial$introduction.adoc[]
+
+The platform is comprised of the following components:
+
+* *Administration Console*: For managing user accounts, permissions, and system settings.
+* *Household Console*: For managing individual households, including financial data, inventory, and tasks.
+
+This documentation is structured as follows:
+
+* *User Manual*: Guides users on managing households within the Household Console.
+* *Administrator Manual*: Provides instructions for installing and managing the platform in the Administration Console.
+* *xref:developer:index.adoc[Developer Documentation]*: Outlines project specifications and internal design for developers.

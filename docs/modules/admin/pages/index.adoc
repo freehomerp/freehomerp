@@ -1,0 +1,5 @@
+= Administrator Manual
+
+In this manual is described how to install the project and manage users and households using the administrator console.
+
+The administrator manual is divided in the following sections:
