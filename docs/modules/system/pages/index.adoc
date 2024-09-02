@@ -1,0 +1,9 @@
+= FreeHomeRP System Documentation
+
+In this section we will describe the system specifications and design in order to help to understand its internals.
+
+This document is divided in the following sections:
+
+* xref:requirements/index.adoc[System Requirements]
+* xref:uxdesign/index.adoc[System UX Design]
+* xref:architecture/index.adoc[System Architecture]

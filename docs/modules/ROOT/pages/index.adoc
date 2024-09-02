@@ -1,0 +1,9 @@
+= FreeHomeRP Product Documentation
+
+Welcome to the FreeHomeRP project! This project is a tool designed to assist you in efficiently managing various aspects of your home, including finances, shopping lists, tasks, and more. With our user-friendly interface and powerful features and tools, you can easily stay organized and streamline your home management responsibilities.
+
+== Product documentation
+
+The documentation of this project is divided in two sections:
+
+* xref:system:index.adoc[System documentation]: where the developers can check the internal design of the project.
