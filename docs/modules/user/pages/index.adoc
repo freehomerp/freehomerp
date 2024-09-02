@@ -1,0 +1,5 @@
+= User Manual
+
+In this manual is described how to use to manage a household as a user.
+
+The user manual is divided in the following sections:

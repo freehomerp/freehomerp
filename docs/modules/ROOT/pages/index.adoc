@@ -1,0 +1,9 @@
+= Product Documentation
+
+include::partial$introduction.adoc[]
+
+This documentation is structured as follows:
+
+* *User Manual*: Guides users on managing households.
+* *Administrator Manual*: Provides instructions for installing and managing the platform.
+* *xref:developer:index.adoc[Developer Documentation]*: Outlines project specifications and internal design for developers.
