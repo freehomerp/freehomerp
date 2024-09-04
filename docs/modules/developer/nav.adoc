@@ -3,5 +3,6 @@
       *** xref:requirements/features.adoc[Features]
       *** xref:requirements/domain.adoc[Domain]
     ** Design
-      *** xref:design/architecture.adoc[Architecture]
-      *** xref:design/database.adoc[Database]
+      *** xref:design/architecture.adoc[System Architecture]
+      *** xref:design/uxui.adoc[UX/UI Design]
+      *** xref:design/database.adoc[Database Design]

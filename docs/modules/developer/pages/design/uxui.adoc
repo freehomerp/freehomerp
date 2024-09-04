@@ -1,0 +1,31 @@
+= System UX/UI Design
+
+== Pages
+
+.Sign In Page
+[plantuml]
+....
+@startsalt
+{
+  {* FreeHomeRP }
+  .
+  Sign in
+  .
+  Username
+  "john doe             "
+  Password
+  "****                 "
+  [ Sign In ]
+}
+@endsalt
+....
+
+.Home Page
+[plantuml]
+....
+@startsalt
+{
+  {* FreeHomeRP }
+}
+@endsalt
+....
