@@ -6,6 +6,113 @@ include::partial$overview.adoc[]
 
 In this section we will describe the system the different system functionalities and their requirements.
 
+=== Admin console
+
+==== Authentication
+
+The system will provide a mechanism to authenticate the administrators that try to use the admin console. Also the authenticated admin should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow an admin to sign in to admin console using their credentials
+| Must
+|
+
+| Sign out
+| The system should allow an admin to sign out from admin console
+| Must
+|
+
+|===
+
+==== User management
+
+The system will provide a mechanism to manage users.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Show user list and details
+| The system should allow an admin to show a user list and user details
+| Must
+|
+
+| Activate users
+| The system should allow an admin to activate a user
+| Must
+|
+
+| Modify users
+| The system should allow an admin to modify a user
+| Must
+|
+
+| Deactivate users
+| The system should allow an admin to deactivate a user
+| Should
+|
+
+|===
+
+==== Household management
+
+The system will provide a mechanism to manage households.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Show household list and details
+| The system should allow an admin to show a household list and household details
+| Must
+|
+
+| Activate households
+| The system should allow an admin to activate a household
+| Must
+|
+
+| Modify households
+| The system should allow an admin to modify a household
+| Should
+|
+
+| Deactivate households
+| The system should allow an admin to deactivate a household
+| Should
+|
+
+| Manage household assigned users
+| The system should allow an admin to assign users to a household
+| Must
+|
+
+|===
+
+=== Household console
+
+The system will provide a mechanism to authenticate the users that try to use the household console. Also the authenticated user should be able to close their session once finished.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in
+| The system should allow a user to sign in to household console using their credentials
+| Must
+|
+
+| Sign out
+| The system should allow a user to sign out from household console
+| Must
+|
+
+|===
+
 == Data requirements
 
 In this section we will describe the system data and their requirements.
