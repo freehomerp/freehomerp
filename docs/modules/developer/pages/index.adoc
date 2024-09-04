@@ -3,3 +3,6 @@
 include::ROOT:partial$introduction.adoc[]
 
 This documentation provides a comprehensive overview of the project specifications and design, organized as follows:
+
+  * *Requirements*: A comprehensive overview of the platform's requirements and limitations, divided into the following subsections:
+    ** *xref:requirements/admin/features.adoc[Administration Console Features]*: A detailed list of features available within the Administration Console, along with their intended use cases.

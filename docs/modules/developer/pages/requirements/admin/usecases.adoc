@@ -1,0 +1,20 @@
+= Administration Console Usecases
+
+== Authentication
+
+[#ADM0001]
+=== ADM0001: Sign in using credentials
+
+Priority:: Must
+Actors:: Admin user and System
+Description:: The admin must be able to log in to the system with their username and password.
+Preconditions::
+    - The admin must have access to a device with an internet connection.
+    - The admin must be registered in the system.
+Postconditions::
+    - The admin is either logged in to the system or has received an error message.
+Main Scenario::
+    . The admin accesses the system's login page.
+    . The admin enters their username and password in the corresponding fields.
+    . The system validates the credentials, sign the admin in and redirects it to the admin console main page.
+        .. If the credentials are invalid, the system displays an error message to the user and goes back to the first step.

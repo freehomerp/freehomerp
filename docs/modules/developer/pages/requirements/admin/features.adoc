@@ -1,0 +1,16 @@
+= Administration Console Features
+
+== Authentication
+
+The system will implement a robust authentication mechanism to verify the identities of administrators attempting to access the Administration Console. Additionally, authenticated administrators will have the capability to terminate their sessions upon completion of their tasks.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in using credentials
+| The system should allow an admin to sign in to admin console using their username and password
+| Must
+| xref:requirements/admin/usecases.adoc#ADM0001[US ADM0001]
+
+|===
