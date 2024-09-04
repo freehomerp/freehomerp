@@ -2,3 +2,4 @@
     ** Requirements
       *** xref:requirements/features.adoc[System Features]
       *** xref:requirements/domain.adoc[System Domain]
+    ** xref:architecture.adoc[System Architecture]
