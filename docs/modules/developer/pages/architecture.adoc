@@ -1,0 +1,33 @@
+= System architecture
+
+== Context architecture
+
+[plantuml]
+....
+!include <C4/C4_Context>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System(freehomerp, "FreeHomeRP", "Platform to manage daily household operations")
+
+Rel(admin, freehomerp, "Manages users")
+
+....
+
+=== Container architecture
+
+[plantuml]
+....
+!include <C4/C4_Container>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+
+System_Boundary(freehomerp, "FreeHomeRP") {
+  Container(webapp, "Web Application")
+  ContainerDb(db, "Database")
+}
+
+Rel(admin, webapp, "Manages users", "HTTPS")
+Rel(webapp, db, "Reads from/Writes to", "TCP/SQL")
+
+....
