@@ -1,0 +1,67 @@
+= System architecture
+
+== Context architecture
+
+.System context view
+[plantuml]
+....
+@startuml
+!include <C4/C4_Context>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+Person(user, "User", "User registered in the system")
+
+System(freehomerp, "FreeHomeRP", "Platform to manage daily household operations")
+
+Rel(admin, freehomerp, "Manages platform settings and users")
+Rel(user, freehomerp, "Manages their households finances, inventory, etc.")
+@enduml
+....
+
+== Container architecture
+
+.System containers view
+[plantuml]
+....
+@startuml
+!include <C4/C4_Container>
+
+Person(admin, "Admin", "User with administration privileges over the system")
+Person(user, "User", "User registered in the system")
+
+System_Boundary(freehomerp, "FreeHomeRP") {
+  Container(webapp, "Web Application")
+  ContainerDb(db, "Database")
+}
+
+Rel(admin, webapp, "Manages platform settings and users", "HTTPS")
+Rel(user, webapp, "Manages their households finances, inventory, etc.", "HTTPS")
+Rel(webapp, db, "Reads from/Writes to", "TCP/SQL")
+@enduml
+....
+
+== Component architecture
+
+=== Web Application Components
+
+.Web Application Components
+[plantuml]
+....
+@startuml
+!include <C4/C4_Component>
+
+Person(user, "User", "User registered in the system")
+
+Container_Boundary(webapp, "Web Application") {
+  Component(signinpage, "SignInPageHandler")
+  Component(userservice, "UsersApplicationService")
+  Component(usersrepo, "UsersRepository")
+}
+ContainerDb(db, "Database")
+
+Rel(user, signinpage, "Opens sign in page and send their credentials", "HTTPS")
+Rel(signinpage, userservice, "Uses")
+Rel(userservice, usersrepo, "Uses")
+Rel(usersrepo, db, "Reads from/Writes to", "TCP/SQL")
+@enduml
+....
