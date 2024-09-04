@@ -1,0 +1,16 @@
+= System Features
+
+== Authentication
+
+The system will implement a robust authentication mechanism to verify the identities of users attempting to access the platform. Additionally, authenticated users will have the capability to terminate their sessions upon completion of their tasks.
+
+[cols="1,2,1,1"]
+|===
+| Name | Description | Priority | Use Cases
+
+| Sign in with username and password
+| The system should allow a user to sign in using username and password
+| Must
+| xref:requirements/usecases.adoc#US01/0001[US01/0001]
+
+|===
