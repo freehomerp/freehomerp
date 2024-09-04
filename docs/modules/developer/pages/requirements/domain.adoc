@@ -1,0 +1,22 @@
+= System domain
+
+== System context
+
+[plantuml]
+....
+[UserManagement]
+....
+
+=== User Management Domain
+
+[plantuml]
+....
+
+package Users <<Aggregate>> {
+  class User <<Root>> {
+    username: String
+    password: Hash
+  }
+}
+
+....
