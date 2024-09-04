@@ -1,0 +1,34 @@
+{
+  "name": "@freehomerp/webapp",
+  "version": "1.0.0",
+  "description": "Free home management platform.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "check-lint": "eslint .",
+    "check-types": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "dev": "vite dev",
+    "fix-lint": "eslint --fix .",
+    "preview": "vite preview"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "engines": {
+    "node": ">= 20",
+    "pnpm": ">= 9"
+  },
+  "devDependencies": {
+    "@freehomerp/eslint-config": "workspace:*",
+    "@sveltejs/adapter-node": "^5.2.2",
+    "@sveltejs/kit": "^2.5.26",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.1",
+    "postcss": "^8.4.45",
+    "svelte": "^4.2.19",
+    "svelte-check": "^4.0.1",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.3",
+    "vitest": "^2.0.5"
+  }
+}
