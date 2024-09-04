@@ -1,0 +1,37 @@
+= System domain
+
+== System Context
+
+.System context view
+[plantuml]
+....
+[Users]
+....
+
+== System domains
+
+=== Users Domain
+
+.User domain view
+[plantuml]
+....
+
+package User <<Aggregate>> {
+  class User <<AggregateRoot>> {
+    id: ID
+    username: String
+    name: String
+    surname: String
+  }
+
+  class Password <<Value Object>> {
+    id: ID
+    hash: String
+
+    verify(password: String): boolean
+  }
+
+  User *-> Password
+}
+
+....

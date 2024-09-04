@@ -6,3 +6,4 @@ This documentation provides a comprehensive overview of the project specificatio
 
   * *Requirements*: A comprehensive overview of the platform's requirements and limitations, divided into the following subsections:
     ** *xref:requirements/features.adoc[System Features]*: A detailed list of features available within the platform, along with their intended use cases.
+    ** *xref:requirements/domain.adoc[System Domain]*: Define the data model, outlining the key entities, attributes, and relationships that represent the core concepts the platform must manage, as well as the operations and constraints
