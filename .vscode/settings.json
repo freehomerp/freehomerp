@@ -1,7 +1,5 @@
 {
   "asciidoc.extensions.enableKroki": true,
   "asciidoc.antora.enableAntoraSupport": true,
-  "conventionalCommits.scopes": [
-    "auth"
-  ]
+  "conventionalCommits.scopes": ["auth"]
 }
