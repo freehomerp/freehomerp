@@ -1,6 +1,7 @@
   * xref:index.adoc[Developer Documentation]
     ** Requirements
-      *** xref:requirements/features.adoc[System Features]
-      *** xref:requirements/domain.adoc[System Domain]
+      *** xref:requirements/features.adoc[Features]
+      *** xref:requirements/domain.adoc[Domain]
     ** Design
+      *** xref:design/architecture.adoc[Architecture]
       *** xref:design/database.adoc[Database]
