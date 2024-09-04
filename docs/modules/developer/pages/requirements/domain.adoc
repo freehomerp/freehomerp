@@ -1,0 +1,35 @@
+= System domain
+
+== System Context
+
+.System context view
+[plantuml]
+....
+[Users]
+....
+
+=== Users Domain
+
+.User domain view
+[plantuml]
+....
+
+package User <<Aggregate>> {
+  class User <<Root>> {
+    id: UserId
+    username: String
+    password: Hash
+  }
+}
+
+package Session <<Aggregate>> {
+  class Session <<Root>> {
+    id: SessionId
+    created: Date
+    expires: Date
+  }
+}
+
+Session.Session o-> User.User : userId
+
+....
