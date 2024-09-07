@@ -22,6 +22,10 @@ importers:
         version: 2.1.1
 
   apps/web:
+    dependencies:
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
     devDependencies:
       '@freehomerp/eslint-config':
         specifier: workspace:*
@@ -47,6 +51,9 @@ importers:
       svelte:
         specifier: ^4.2.19
         version: 4.2.19
+      svelte-awesome-icons:
+        specifier: ^1.2.1
+        version: 1.2.1(svelte@4.2.19)
       svelte-check:
         specifier: ^4.0.1
         version: 4.0.1(svelte@4.2.19)(typescript@5.5.4)
@@ -1456,6 +1463,11 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  svelte-awesome-icons@1.2.1:
+    resolution: {integrity: sha512-vCWzD3bOpQnkx3kMc8D5/+zeOcIvRUO1eI3OT1RmNpPbRimpUwlb/9sVx9CD+m4UjvdkdVHZfSYgTXGiUMH0kA==}
+    peerDependencies:
+      svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
+
   svelte-check@4.0.1:
     resolution: {integrity: sha512-AuWnCZdREoOzMhoptHPUUPYUxLNdXSkoZnPnlv19SZJJimRzLmjjZLKsOiRB4AnhgX+56/WSEdvkWXI/q2BSsA==}
     engines: {node: '>= 18.0.0'}
@@ -1700,6 +1712,9 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -2938,6 +2953,10 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
+  svelte-awesome-icons@1.2.1(svelte@4.2.19):
+    dependencies:
+      svelte: 4.2.19
+
   svelte-check@4.0.1(svelte@4.2.19)(typescript@5.5.4):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
@@ -3188,3 +3207,5 @@ snapshots:
   yaml@2.5.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.23.8: {}
