@@ -16,6 +16,6 @@
 </div>
 <div class="relative h-6">
   {#if error}
-    <label class="text-error absolute bottom-0 left-2 text-sm font-light" for={name}>{error[0]}</label>
+    <label class="text-error absolute bottom-0 text-sm font-light" for={name}>{error[0]}</label>
   {/if}
 </div>
