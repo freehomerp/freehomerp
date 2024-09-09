@@ -1,12 +1,12 @@
 import { type Handle, redirect } from '@sveltejs/kit';
 
-import { retrieveSession } from '$lib/server/utils/session';
+import { retrieveSessionCookie } from '$lib/server/utils/cookies';
 
 export const handle: Handle = async ({ event, resolve }) => {
   // TODO: Retrieve session
-  event.locals.session = retrieveSession(event.cookies);
+  event.locals.sessionId = await retrieveSessionCookie(event.cookies);
 
-  if (event.url.pathname == '/' && !event.locals.session) {
+  if (event.url.pathname == '/' && !event.locals.sessionId) {
     throw redirect(303, '/auth/signin');
   }
 
