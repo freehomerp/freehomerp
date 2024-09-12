@@ -2,3 +2,5 @@
     ** Requirements
       *** xref:requirements/features.adoc[System Features]
       *** xref:requirements/domain.adoc[System Domain]
+    ** Design
+      *** xref:design/database.adoc[Database]

@@ -1,0 +1,28 @@
+= Database design
+
+== Users database
+
+.User database
+[plantuml]
+....
+@startuml
+
+class User {
+  id: varchar[36] <<PK>>
+  username: varchar[50]
+  name: varchar[50]
+  surname: varchar[50]
+  password: varchar[60]
+}
+
+class Session {
+  id: varchar[36] <<PK>>
+  user_id: varchar[36] <<FK>>
+  created: datetime
+  expires: datetime
+}
+
+User ||-o{ Session
+
+@enduml
+....
